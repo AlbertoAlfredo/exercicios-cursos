@@ -1,0 +1,6 @@
+x = input('Digite um valor ')
+print("O valor digitado é do tipo: {}".format(type(x)))
+print("O valor digitado é numérico? - {}".format(x.isnumeric()))
+print("O valor digitado é letras? - {}".format(x.isalpha()))
+print("O valor digitado é alphanumérico? - {}".format(x.isalnum()))
+print("O valor digitado é unicamente espaços? - {}".format(x.isspace()))
