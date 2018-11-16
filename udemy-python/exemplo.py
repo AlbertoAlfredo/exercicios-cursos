@@ -1,0 +1,5 @@
+print('Teste em python')
+Num1 = float(input('Digite um número '))
+Num2 = float(input('Digite outro número '))
+print('O resultado de ', Num1, ' + ', Num2, ' é: ', Num1+Num2)
+print('Cabô')
