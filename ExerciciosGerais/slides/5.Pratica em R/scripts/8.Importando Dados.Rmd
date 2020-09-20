@@ -1,0 +1,21 @@
+---
+Formação Cientista de Dados - Prof. Fernando Amaral
+Importando Dados
+---
+```{r}
+#install.packages("xlsx")
+library(xlsx)
+```
+Texto
+```{r}
+#texto
+x = read.csv(file.choose(),header = TRUE, sep = ",")
+x
+x = read.csv("Credit.csv",header = TRUE, sep = ",")
+x
+```
+Excel
+```{r}
+dados = read.xlsx("Credit.xlsx",sheetIndex = 1)
+dados
+```
