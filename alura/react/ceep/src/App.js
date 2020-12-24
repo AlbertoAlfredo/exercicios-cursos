@@ -1,18 +1,17 @@
-import React from "react";
+import React, { Component } from "react";
+//import { render } from "react-dom";
+import { FormularioCadastro } from "./components/FormularioCadastro";
 import {ListaDeNotas} from "./components/ListaDeNotas"
-function App() {
-  return (
-    <section>
-      <form>
-        <input type="Text" placeholder="Título"/>
-        <textarea placeholder="Escreva sua nota"/>
-        <button>Criar</button>
-      </form>
-      <ListaDeNotas/>
-    </section>
-  );
+class App extends Component {
+  render(){
+    return (
+      <section>
+        <FormularioCadastro/>
+        <ListaDeNotas/>
+      </section>
+    );
+  }
+  
 }
 
-//react -> lib
-//React -> Ecossistema
 export default App;
