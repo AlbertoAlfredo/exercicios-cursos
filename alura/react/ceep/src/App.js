@@ -1,26 +1,18 @@
-import logo from './logo.svg';
-import './App.css';
-
+import React from "react";
+import {ListaDeNotas} from "./components/ListaDeNotas"
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-        <p>Hello World caralho</p>
-      </header>
-    </div>
+    <section>
+      <form>
+        <input type="Text" placeholder="Título"/>
+        <textarea placeholder="Escreva sua nota"/>
+        <button>Criar</button>
+      </form>
+      <ListaDeNotas/>
+    </section>
   );
 }
 
+//react -> lib
+//React -> Ecossistema
 export default App;
