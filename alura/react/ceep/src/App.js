@@ -1,17 +1,27 @@
 import React, { Component } from "react";
-//import { render } from "react-dom";
-import { FormularioCadastro } from "./components/FormularioCadastro";
-import {ListaDeNotas} from "./components/ListaDeNotas"
+import ListaDeNotas from "./components/ListaDeNotas/ListaDeNotas";
+import FormularioCadastro from "./components/FormularioCadastro/FormularioCadastro";
+import "./assets/App.css";
+import './assets/index.css';
 class App extends Component {
-  render(){
+
+  constructor(){
+    super();
+    this.notas = [];
+  }
+  criarNota(titulo, texto){
+    const novaNota = {titulo, texto}
+    this.notas.push(novaNota)
+  }
+
+  render() {
     return (
-      <section>
-        <FormularioCadastro/>
-        <ListaDeNotas/>
+      <section className="conteudo">
+        <FormularioCadastro criarNota={this.criarNota.bind(this)} />
+        <ListaDeNotas notas={this.notas}/>
       </section>
     );
   }
-  
 }
 
 export default App;
