@@ -7,7 +7,23 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
+.conteudo-principal {
+  flex-grow: 3;
+}
+
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+.listaCategoria ul li {
+  display: inline-block;
+  color: #fff;
+  background-color: #373f51;
+  padding: 0.5rem;
+  margin: 0.1rem;
+  border-radius: 1rem;
+}
+
+.listaCategoria-input {
+  display: inline-block;
 }
